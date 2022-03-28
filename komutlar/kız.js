@@ -32,7 +32,7 @@ if(taglıalım === true){
 }
 if(["957610112485314581","957610102834212954"].some(erkek => member.roles.cache.has(erkek))) return message.lineReply("Kullanıcı zaten kayıtlı.").then(sil => sil.delete({timeout: 5000}));
  
- await message.guild.members.cache.get(member.id).setNickname(`${name} tagını yaz`)
+ await message.guild.members.cache.get(member.id).setNickname(`● ${name}`)
  db.push(`isimler_${member.id}`, ` \`${name} tagını yaz\` (<@&kızrolid>) yetkili:${message.author}`);
  db.set(`kayıt_${member.id}`, true)
  db.add(`kız_${message.author.id}`, 1)
