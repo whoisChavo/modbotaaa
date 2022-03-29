@@ -3,7 +3,7 @@ const ayarlar = require('../ayarlar.json')
 exports.run = async (client, message, args) => {
   if(!message.member.roles.cache.has(ayarlar.registerhammer) && !message.member.hasPermission("ADMINISTRATOR")) return message.react(ayarlar.red)
   var bot = message.guild.members.cache.filter(s => s.voice.channel && s.user.bot).size
-   var tag = message.guild.members.cache.filter(m => m.user.username.includes(["ᛠ","Vienna","vienna"])).size 
+   var tag = message.guild.members.cache.filter(m => m.user.username.includes("ᛠ")).size 
   var etiket =  message.guild.members.cache.filter(s => !s.bot).filter(member => member.user.discriminator == "").size;
     var taglı = message.guild.members.cache.filter(s => !s.bot).filter(member => member.roles.cache.get("957599853674921994")).size; 
         var toplamüye = message.guild.memberCount
