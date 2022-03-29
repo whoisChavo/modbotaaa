@@ -14,7 +14,7 @@ exports.run = async (client, message, args) => {
         message.lineReply(new MessageEmbed()
             .setDescription(`\`❯\` Toplam \**${toplamüye}\** kişi Vienna'nın Kanatları Altında.
             \`❯\` Seste toplam \**${Sesli}\** Üye Bulunmakta.
-            \`❯\` Toplam \**${taglı}\** kişi ailemize katılmış!
+            \`❯\` Toplam \**${tag}\** kişi ailemize katılmış!
             \`❯\` Sunucumuzda Toplam \**${boost}\** Boost Bulunmakta (**${boostlevel}.seviye**).
 `) 
             )
